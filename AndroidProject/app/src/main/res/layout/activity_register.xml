@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="registerViewModel"
+            type="com.mydemoapp.viewModel.RegisterViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relative_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_register"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_register"
+            android:layout_alignBaseline="@+id/tv_user"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/tv_user"
+            android:hint="Enter user name:"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_user"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Email Id:"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_email_"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_user"
+            android:layout_alignBaseline="@+id/tv_email"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/tv_email"
+            android:hint="Enter Email Id:"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_password_"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_email"
+            android:layout_alignBaseline="@+id/tv_password"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/tv_password"
+            android:hint="Enter Password:"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="80dp"
+            android:background="@color/colorPrimary"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+</layout>
